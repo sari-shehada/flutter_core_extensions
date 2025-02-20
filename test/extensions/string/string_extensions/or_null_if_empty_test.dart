@@ -5,7 +5,7 @@ void main() {
   test(
     'Empty String should return null',
     () {
-      expect(''.orNullIfEmpty(), null);
+      expect(''.orNullIfEmpty, null);
     },
   );
 
@@ -13,7 +13,7 @@ void main() {
     'Non-empty String should return the same value',
     () {
       final String value = 'abc';
-      expect(value, value);
+      expect(value.orNullIfEmpty, value);
     },
   );
 }
