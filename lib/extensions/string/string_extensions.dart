@@ -11,7 +11,5 @@ extension StringExtensions on String {
   ///
   /// print(nonEmptyString.orNullIfEmpty()); // Output: "Hello"
   /// print(emptyString.orNullIfEmpty()); // Output: null
-  String? orNullIfEmpty() {
-    return isEmpty ? null : this;
-  }
+  String? get orNullIfEmpty => isEmpty ? null : this;
 }
